@@ -1,45 +1,33 @@
-# NILSCA Website
+# NILSCA — Next.js (Vercel-ready)
 
-Premium site for the **Nigeria Licensed Ship Chandlers Association** — public pages + password-protected admin.
+Nigeria Licensed Ship Chandlers Association website + admin, rebuilt for **Next.js** so it can deploy on Vercel.
 
 ## Stack
 
-- PHP 8+ (pages, admin, forms)
-- Vite + Tailwind (CSS/JS build)
-- JSON file storage under `data/` (no database required)
+- Next.js 15 (App Router) + TypeScript + Tailwind CSS v4
+- JSON data in `/data` (members, content, executives, applications, inquiries)
+- Cookie admin auth (`ADMIN_PASSWORD` + `ADMIN_SECRET`)
 
-## Local development
+## Local
 
 ```bash
 npm install
-npm run build
-php -S localhost:8080 router.php
+cp .env.example .env.local   # set ADMIN_PASSWORD
+npm run dev
 ```
 
-- Site: http://localhost:8080  
-- Admin: http://localhost:8080/admin/login.php  
-- Copy `config.example.php` → `config.php` and set `admin_password`
+- Site: http://localhost:3000  
+- Admin: http://localhost:3000/admin/login  
 
-## Deploy (shared hosting / cPanel) — recommended
+## Vercel
 
-This project is built for **PHP shared hosting**, not Vercel.
+1. Import https://github.com/DaUnderlord/Nigeria-Licensed-Ship-Chandlers-Association  
+2. Framework: Next.js (auto)  
+3. Env vars: `ADMIN_PASSWORD`, `ADMIN_SECRET` (long random string)  
+4. Deploy  
 
-1. `npm install && npm run build`
-2. Upload the project to `public_html` (include `assets/build/`, `data/`, `images/`, `uploads/`, PHP files, `.htaccess`)
-3. Create `config.php` from `config.example.php` and set a strong password
-4. Make `data/` and `uploads/` writable
+**Note on admin writes:** Serverless filesystems on Vercel are not durable. Public pages and seeded data work. For admin edits / form submissions to persist in production, add a database (e.g. Supabase — ~$10/mo on this org, or a free Neon/Turso plan). Locally and on a Node VPS, JSON writes work as-is.
 
-## GitHub
+## Legacy PHP
 
-Repository: https://github.com/DaUnderlord/Nigeria-Licensed-Ship-Chandlers-Association
-
-## Important: Vercel
-
-**Vercel does not run traditional PHP apps** (no PHP runtime for `index.php`, sessions, or writable JSON on disk).  
-
-To host this exact codebase, use:
-
-- cPanel / shared hosting  
-- or a PHP-capable host (Railway, Render, DigitalOcean App Platform with PHP)
-
-If you need **Vercel specifically**, the site must be rebuilt as Next.js (or similar). Ask if you want that migration.
+Previous shared-hosting PHP build is preserved under `legacy-php/` for reference.

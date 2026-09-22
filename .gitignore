@@ -1,15 +1,38 @@
-config.php
-node_modules/
-.DS_Store
-*.log
-uploads/applications/
-uploads/*
-!uploads/.gitkeep
-!uploads/.htaccess
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Source photo dumps (cleaned copies live in /images)
-/assets/*.png
-/assets/*.jpg
-/assets/*.jpeg
-/assets/*.webp
-!/assets/build/
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+*.log
+
+# env
+.env
+.env*.local
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# legacy / local
+config.php
+legacy-php/config.php
+uploads/applications/
