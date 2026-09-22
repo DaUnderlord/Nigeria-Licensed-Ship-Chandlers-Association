@@ -62,10 +62,30 @@
   position: fixed;
   inset: 0;
   z-index: 100;
-  background: #000;
   display: grid;
   place-items: center;
-  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.9s;
+  background: transparent;
+  transition: opacity 0.35s ease, visibility 0.35s;
+}
+
+.splash-veil {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 55% at 50% 110%, rgba(59, 167, 224, 0.28), transparent 55%),
+    linear-gradient(180deg, #030d18 0%, #061628 42%, #0b2a4a 100%);
+  transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.splash-root.is-exiting .splash-veil {
+  opacity: 0;
+}
+
+.splash-root.is-exiting .splash-stage,
+.splash-root.is-exiting .splash-skip {
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .splash-root.is-done {
@@ -76,6 +96,7 @@
 
 .splash-stage {
   position: relative;
+  z-index: 1;
   width: min(72vw, 420px);
   aspect-ratio: 1;
   display: grid;
@@ -174,6 +195,7 @@
 
 .splash-skip {
   position: absolute;
+  z-index: 1;
   bottom: 1.75rem;
   right: 1.75rem;
   font-size: 0.75rem;

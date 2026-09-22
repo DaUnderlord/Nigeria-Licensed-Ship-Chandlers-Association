@@ -19,6 +19,7 @@ export default async function HomePage() {
     <>
       <ClientEffects splash />
       <div className="splash-root" data-splash role="dialog" aria-label="Welcome">
+        <div className="splash-veil" aria-hidden />
         <div className="splash-stage">
           <div className="splash-globe" aria-hidden />
           <div className="splash-meridian" aria-hidden />

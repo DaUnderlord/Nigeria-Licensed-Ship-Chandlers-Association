@@ -102,11 +102,19 @@ function initSplashHero() {
   const seen = sessionStorage.getItem(SPLASH_KEY) === "1";
 
   const finish = () => {
-    splash?.classList.add("is-done");
+    if (!splash || splash.classList.contains("is-done") || splash.classList.contains("is-exiting")) {
+      hero.classList.add("is-revealed");
+      return;
+    }
+    // Lift the navy veil first so the port hero shows through, then dismiss splash.
+    splash.classList.add("is-exiting");
     hero.classList.add("is-revealed");
     navLogo?.classList.add("is-arriving");
     sessionStorage.setItem(SPLASH_KEY, "1");
-    setTimeout(() => splash?.setAttribute("aria-hidden", "true"), 950);
+    setTimeout(() => {
+      splash.classList.add("is-done");
+      splash.setAttribute("aria-hidden", "true");
+    }, 850);
   };
 
   if (!splash || reduce || seen) {
