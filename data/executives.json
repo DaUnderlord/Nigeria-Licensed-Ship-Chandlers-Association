@@ -1,0 +1,82 @@
+{
+  "executives": [
+    {
+      "name": "Dr Martins C. Enebeli",
+      "role": "National President",
+      "company": "Etiana Ventures Ltd",
+      "photo": "/images/exec-president.jpg"
+    },
+    {
+      "name": "Mr Abilo Ochuko Ughe",
+      "role": "National Deputy President / Lagos Zonal Chairman and Operations",
+      "company": "Yannis Maritime Services Nig Ltd",
+      "photo": "/images/exec-deputy.jpg"
+    },
+    {
+      "name": "Mr Uche Mbaoma",
+      "role": "National Vice President",
+      "company": "Uchejosiah & Son Ventures",
+      "photo": "/images/exec-vp.jpg"
+    },
+    {
+      "name": "Mrs Beatrice Ogbumou",
+      "role": "Financial Secretary",
+      "company": "Ede Egbuaba & Sons Ltd",
+      "photo": "/images/exec-financial.jpg"
+    },
+    {
+      "name": "Alhaji Alpha",
+      "role": "Director General of Six Geographical Zones",
+      "company": "Al Bradin Nig Ltd",
+      "photo": "/images/exec-alpha.png"
+    },
+    {
+      "name": "Mr Babatunde Aminu",
+      "role": "National General Secretary",
+      "company": "Alhaja Aminu & Sons",
+      "photo": ""
+    },
+    {
+      "name": "Mr Duran A. Duran",
+      "role": "Chairman Port Harcourt Zone",
+      "company": "Renge Tech Service Ltd",
+      "photo": ""
+    },
+    {
+      "name": "Mr Julius Okocha",
+      "role": "Chairman Warri Zone",
+      "company": "J.C Okocha & Sons Ltd",
+      "photo": ""
+    },
+    {
+      "name": "Mr Aminu",
+      "role": "Inter Governmental Affairs",
+      "company": "",
+      "photo": ""
+    },
+    {
+      "name": "Mr Kingsley Onumaegbu",
+      "role": "National Organizing Secretary",
+      "company": "Mark & Finah Nig Ltd",
+      "photo": "/images/exec-organizing.png"
+    },
+    {
+      "name": "Mr Frances Obeh",
+      "role": "Deputy Organizing Secretary",
+      "company": "",
+      "photo": "/images/exec-frances.jpg"
+    },
+    {
+      "name": "Mr Solibibo Horsfall",
+      "role": "Trustee and EX Official",
+      "company": "De Kailo Oil Services Ltd",
+      "photo": ""
+    },
+    {
+      "name": "Mr Kinsley Onojaife",
+      "role": "Coordinator, League of Trustees and International Matters",
+      "company": "Jassco Maritime Resource Ltd",
+      "photo": "/images/exec-onojaife.png"
+    }
+  ]
+}

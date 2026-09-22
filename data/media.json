@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "id": "seed_hero",
+      "label": "Home hero — port at dawn",
+      "path": "/images/hero-port-dawn.png",
+      "uploaded_at": "2026-09-22T00:00:00+00:00"
+    },
+    {
+      "id": "seed_chandlery",
+      "label": "Chandlery dock supplies",
+      "path": "/images/section-chandlery-dock.png",
+      "uploaded_at": "2026-09-22T00:00:00+00:00"
+    },
+    {
+      "id": "seed_horizon",
+      "label": "Open horizon banner",
+      "path": "/images/section-horizon.png",
+      "uploaded_at": "2026-09-22T00:00:00+00:00"
+    }
+  ]
+}

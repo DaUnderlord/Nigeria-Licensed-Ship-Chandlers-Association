@@ -1,0 +1,1340 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "company": "E-TIANA VENTURES LTD",
+      "address": "5, Bombay Crescent Apapa",
+      "contact": "Dr Martins E.Enebeli",
+      "phone": "+234-8085288012, 234-8052880012, 234-8080218248, 234-8121158111",
+      "email": "etianamarine@yahoo.com, etianamarine@gmail.com"
+    },
+    {
+      "id": 2,
+      "company": "YANNIS MARITIME SERVICES NIG LTD",
+      "address": "38 Bombay Crescent Apapa Lagos Nigeria",
+      "contact": "Ochuko Mr Abilo",
+      "phone": "+234-8033017079,234-9090604732",
+      "email": "abiloughe@yahoo.com, asabiscol@gmail.com"
+    },
+    {
+      "id": 3,
+      "company": "JESSCO MARITIME RESOURCE LTD",
+      "address": "19, Adele rd. Apapa Lagos",
+      "contact": "Mr Onojaife Kingsley",
+      "phone": "+234803330492",
+      "email": ""
+    },
+    {
+      "id": 4,
+      "company": "MARK & FINAH NIG LTD",
+      "address": "13/15, Sapele rd. Apapa Lagos",
+      "contact": "Onumaegbu Chief Luck",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 5,
+      "company": "SUNNY STAR MARINE SERVICES LTD",
+      "address": "33, Creek rd. Apapa Lagos",
+      "contact": "Sunny Thoms",
+      "phone": "+2348033716027",
+      "email": "supply@sunnystarmarineservices.com"
+    },
+    {
+      "id": 6,
+      "company": "LEBRADAN NIGERIAN LIMITED",
+      "address": "1A/1B Crowther Crescent Apapa GRA Lagos",
+      "contact": "NASIRU DANJUMA IBRAHIM",
+      "phone": "+2347032038233 / +2348097531003",
+      "email": "lebradan2@gmail.com / ibrodinho2007@gmail.com"
+    },
+    {
+      "id": 7,
+      "company": "KAZUMA SHIPPING",
+      "address": "10, Arodorome rd. Apapa Lagos",
+      "contact": "A.Okpo Mr. Sunny",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 8,
+      "company": "DOMSUN INVESTMENT & MARINE SERVICES LTD",
+      "address": "10, Pelewura Way Apapa Lagos",
+      "contact": "Mr. D .T. Onabajo",
+      "phone": "+234-8072111168, +234-8033049287",
+      "email": "dimschandlers@yahoo.com, dimschandlers@gmail.com"
+    },
+    {
+      "id": 9,
+      "company": "BEHLISS -MEGA SUPPLY LTD",
+      "address": "21 WARE HOUSE ROAD APAPA",
+      "contact": "EDAFE NELSON OFUNAMA",
+      "phone": "2348162223552",
+      "email": "belismarineglobalsupply@gmail.com"
+    },
+    {
+      "id": 10,
+      "company": "PATRICK GANZA LIMITED",
+      "address": "Suite 25, Anjorin Shopping Complex Apapa Lagos",
+      "contact": "Patrick Mr. Patrick",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 11,
+      "company": "JET BLUE SERVICES LTD",
+      "address": "ALHAJI MOSHOOD TIJANI ROAD OFF RANDLE VENUE APAPA LAGOS",
+      "contact": "KINGSLEY MADUKWE MADUKWE",
+      "phone": "2348033443555",
+      "email": "info@jetblue-services.com"
+    },
+    {
+      "id": 12,
+      "company": "SHOPWORKS LIMITED",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 13,
+      "company": "S.ADISON LIMITED",
+      "address": "1, Sand Beach Coconut Apapa Lagos",
+      "contact": "Mr. Samuel Adindu Uwandu",
+      "phone": "+234-8033824551. +234-8185440242",
+      "email": "Uwandu.s@yahoo.com"
+    },
+    {
+      "id": 14,
+      "company": "PRINCE DE MARITIME INT'L",
+      "address": "Suite 8A, Amusement Park Plaza, Apapa Lagos",
+      "contact": "Uche Fidelis Akonye Mr. Prince",
+      "phone": "+234-7030625949. +234-8187525274",
+      "email": "Maritimeprince14@gmail.com, princedemaritime@yahoo.com"
+    },
+    {
+      "id": 15,
+      "company": "LUKSUMPTA INTERNATIONAL VENTURES",
+      "address": "23 Badagry Road of Marine Road",
+      "contact": "Mr Akpodeh Emoefe",
+      "phone": "+234-8032716780, +234-7081035559",
+      "email": "Luksumpta@yahoo.com"
+    },
+    {
+      "id": 16,
+      "company": "MERCYWELL MARITIME SERVICE LIMITED",
+      "address": "5 Mosco Road Abeokuta Express Ojokoro Lagos",
+      "contact": "Oluwafemi Mr. Ogundeyi",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 17,
+      "company": "TORRO ENTERPRISES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 18,
+      "company": "E.O.FABUNMI&SONS LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 19,
+      "company": "ZAMLAK NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 20,
+      "company": "GLUTFIELD NIG. LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 21,
+      "company": "SOUTHEAST ATLANTIC LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 22,
+      "company": "ADAGOS NI SERVICES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 23,
+      "company": "MOUGAUNI VENTURES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 24,
+      "company": "THE TWIN BROTHERS NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 25,
+      "company": "C & RESOURCES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 26,
+      "company": "GEO REYSTING PRODUCT LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 27,
+      "company": "D'ZENIA SOLUTIONS LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 28,
+      "company": "ATLAMART SERVICES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 29,
+      "company": "VOW VENTURES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 30,
+      "company": "HARRIBOND RESOURCES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 31,
+      "company": "VEGGIE SUPPLY ENTERPRISES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 32,
+      "company": "ALHAJA AMINU & SONS",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 33,
+      "company": "OBISCO NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 34,
+      "company": "FORTUNE GLOBAL SHIPPING LOGISTICS LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 35,
+      "company": "SIMEON A. SHARMAH LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 36,
+      "company": "OCEANSTAR GLOBAL",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 37,
+      "company": "ELIJOD MARITIME LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 38,
+      "company": "COLLOSAL EXPRESSO LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 39,
+      "company": "SEAL ATLANTIC LIMITED",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 40,
+      "company": "KEVIN GLOBAL MARINE SERVICES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 41,
+      "company": "ELIROSE NIG. LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 42,
+      "company": "CHI-WHITE ENT. NIG. LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 43,
+      "company": "CHUKS NIG ENTERPRISES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 44,
+      "company": "LABAMBA INTEGRATED SERVICES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 45,
+      "company": "CHALYVIS INTL LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 46,
+      "company": "SMITHCO INT'L. GLOBAL RESOURCES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 47,
+      "company": "ABBERBEEN NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 48,
+      "company": "JIMITEX & PARTNER LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 49,
+      "company": "J C maritime inter Ltd",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 50,
+      "company": "UCHE JOSIAH & SON VENTURES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 51,
+      "company": "EAST WEST COAST NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 52,
+      "company": "ONYEMA CHIMA & SONS ENTERPRISES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 53,
+      "company": "ROCK MARINE INTL.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 54,
+      "company": "OCEAN-WAVE LOGISTICS SERVICES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 55,
+      "company": "TOBANCO NIG. LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 56,
+      "company": "VICMATTI MSK LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 57,
+      "company": "CLIFF'S PRIDE RESOURCES INVESTMENT LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 58,
+      "company": "EDE EBGUABA & SONS LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 59,
+      "company": "PAT CYRIL COMPANY",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 60,
+      "company": "ALLIED CONTINENTAL SERVICES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 61,
+      "company": "KEZINTIA SERVICES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 62,
+      "company": "VIENTOR VENTURES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 63,
+      "company": "HANNADI NIGERIA LIMITED",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 64,
+      "company": "CHOBEN-OPS LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 65,
+      "company": "VALGO MEDIA LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 66,
+      "company": "JOSI MARITIME LIMITED",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 67,
+      "company": "JERRI-JO GLOBAL CONCEPT NIG. LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 68,
+      "company": "PEG BOYE COMPANY",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 69,
+      "company": "HASSANDI NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 70,
+      "company": "BAOTA INT. AGENCIES NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 71,
+      "company": "OLAMACKISM NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 72,
+      "company": "EBENEZER LOGISTICS & MARINE SERVICES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 73,
+      "company": "BOLRON GLOBAL SERVICES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 74,
+      "company": "UFERE UDE VENTURES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 75,
+      "company": "DOLPHIN CHANDLER ENTERPRISES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 76,
+      "company": "EZESON COMPANY NIG LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 77,
+      "company": "HERITAGE MARINE RESOURCES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 78,
+      "company": "WORLD OVERCOMER INTL. RECONCILATION FORUM",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 79,
+      "company": "CHALOKAS INT'L LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 80,
+      "company": "SKIVAM NIG. LTD",
+      "address": "block 133 plot 14 lekki epe expressway lekki Lagos",
+      "contact": "kingsley fufeyin",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 81,
+      "company": "EJIX MARITIME LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 82,
+      "company": "MGB INT'L LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 83,
+      "company": "ARSENAL MARINE VENTURES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 84,
+      "company": "MANUEL AUDREY SERVICES NIG. LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 85,
+      "company": "AFRICAN CONTINENTAL MARITIME LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 86,
+      "company": "VICTOR INT'L SERVICES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 87,
+      "company": "BMW ADESINA NIG. LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 88,
+      "company": "LADY BOLA INVESTMENT LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 89,
+      "company": "KENNY AGENCIES NIG. LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 90,
+      "company": "ASHEDUKUM & SONS NIG. LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 91,
+      "company": "RIGORS ENTERPRISES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 92,
+      "company": "ELITO NIGERIA LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 93,
+      "company": "TJAFRIOR COMPANY",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 94,
+      "company": "JETARE NIGERIA LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 95,
+      "company": "GHAREJE NIGERIA LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 96,
+      "company": "OTENS GLOBAL ENTERPRISES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 97,
+      "company": "JOET ERU'S INT'L LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 98,
+      "company": "FAST FOCUS SERVICES NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 99,
+      "company": "TAMASI MARINE & INDUSTRIAL VENTURES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 100,
+      "company": "ALIPEP NIG. LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 101,
+      "company": "DE-KAIBIRI NIG. LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 102,
+      "company": "ENO GENERAL AGENCIES NIG. LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 103,
+      "company": "EMMAJA & SONS COMPANY",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 104,
+      "company": "GFMC NIGERIA LIMITED",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 105,
+      "company": "ATI-BEN COMPANY NIG.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 106,
+      "company": "P.UTECH",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 107,
+      "company": "DAKIMOLA BROTHERS LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 108,
+      "company": "CHUGOS & SONS ENTERPRISES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 109,
+      "company": "JOHN MORNRAIN LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 110,
+      "company": "JEK & SONS LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 111,
+      "company": "ANDY TRANSACTIONS",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 112,
+      "company": "DE KAILO OIL SERVICES LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 113,
+      "company": "BENTON GLOBAL RESOURCES LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 114,
+      "company": "Rang Technical services Ltd",
+      "address": "21 Afam Street D/Line,opus plaza port Harcourt Nigeria",
+      "contact": "Duran Duran",
+      "phone": "234-08037076961",
+      "email": "rangeshipsuppliers@yahoo.com"
+    },
+    {
+      "id": 115,
+      "company": "ROSELINK COMPANY LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 116,
+      "company": "OSCAR INTEGRATED SERVICES",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 117,
+      "company": "AZOBEMOR SHIP CHANDLERS",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 118,
+      "company": "SEASHOR OFFSHORE CONTRACTING CO. LTD.",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 119,
+      "company": "SHORE TIDE NIG",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 120,
+      "company": "REBECCA NIG LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 121,
+      "company": "HEPA GLOBAL ENERGY LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 122,
+      "company": "IKOKO & SONS",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 123,
+      "company": "CHALYVIS INT'L LTD",
+      "address": "",
+      "contact": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 124,
+      "company": "JACK MARINE INT,L SERVICES LTD",
+      "address": "73A MARINE ROAD APAPA LAGOS",
+      "contact": "AKPUNA godfrey",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 125,
+      "company": "ALBRAL ALLIANCE LTD",
+      "address": "3 WOSU AVENUE,IGBO ETCHE RD RUMUOKWURUSHI PORT HARCOURT RIVER STATE",
+      "contact": "PURGATORIO RACHEL ONU",
+      "phone": "234-8149577734",
+      "email": "info@albralliance.com"
+    },
+    {
+      "id": 126,
+      "company": "CLEARLINK SERVICES NIGERIA LIMITED",
+      "address": "6 kofo Abayomi street, APAPA,lAGOS",
+      "contact": "CHUCKS CELESTINE EFUNWA",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 127,
+      "company": "PIDMARITIME SERVICES NIG LTD",
+      "address": "33 CREEK ROAD APAPA LAGOS",
+      "contact": "INNOCENT DANSU POSU",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 128,
+      "company": "IVANNA GLOBAL SUPPLIES LIMITED",
+      "address": "8 WHARE HOUSE ROAD APAPA",
+      "contact": "COSMAS OSE EBOSELE",
+      "phone": "234-8035294563",
+      "email": "info@ivannaglobal.com"
+    },
+    {
+      "id": 129,
+      "company": "EASYSHOP EASYCOOK SERVICES LTD",
+      "address": "1 PETER AYANSI CLOSE SURULERE LAGOS",
+      "contact": "SAUDAT OLADEINDE SALAMI",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 130,
+      "company": "GSHOPPERS GLOBAL SERVICES LTD",
+      "address": "NO 101 G,U AKEH RD ELIOZU PORT-HARCOURT",
+      "contact": "CHIOKE FAVOUR",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 131,
+      "company": "FLOUSHO NIGERIA LIMITED",
+      "address": "68 BORNO CRESCENT APAPA LAGOS NIGERIA",
+      "contact": "FLORENCE ADEYANJU",
+      "phone": "2348033053665",
+      "email": "floshoning@yahoo.com"
+    },
+    {
+      "id": 132,
+      "company": "LUBARI MARITIME COMPANY LTD",
+      "address": "21ROAD WCLOSE PLOT24B FESTAC LAGOS",
+      "contact": "SIEDOMA DUMKA",
+      "phone": "2348033412596,2347049469437",
+      "email": "contact@lubarigroup.com"
+    },
+    {
+      "id": 133,
+      "company": "PHILMARIO GLOBAL SERVICES LTD",
+      "address": "11B QUEENS BARRACK RD APAPA",
+      "contact": "EBOSELE PHILLIP OSEMHANRE",
+      "phone": "2348056544164,2348169224603",
+      "email": "info@philmarioglobalservices.com"
+    },
+    {
+      "id": 134,
+      "company": "KING SHIPPING TRADING SERVICES LTD",
+      "address": "3MOSHOOD TIJANI STREET APAPA LAGOS",
+      "contact": "CHUKWUMA HYACENT",
+      "phone": "2348167069828",
+      "email": "info@kingshippingtrading.com"
+    },
+    {
+      "id": 135,
+      "company": "PERKRA ENERGY LTD",
+      "address": "OVAMANN HOUSE,1 SHALOM STREET,OFF APPLE JUNCTION ,ALONG OKOTA LINK ROAD,AMUWO ODOFIN LAGOS",
+      "contact": "MUDIAGA OMOROKO",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 136,
+      "company": "NELSHORE RESOURCES LTD",
+      "address": "NO 39 RAILWAY ROAD BY PLATEUS STREET APAPA LAGOS",
+      "contact": "OLUWAFEMI,PHILLIP [JITADE",
+      "phone": "2347064696999",
+      "email": "nelshoreresources@gmail.com"
+    },
+    {
+      "id": 137,
+      "company": "ALPHOKING LTD",
+      "address": "45 Bombay crescent Apapa Lagos",
+      "contact": "Matthew Iwuchukwu",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 138,
+      "company": "SPARKLE SUPPLY CHAIN LTD",
+      "address": "40 IDI STREET OLODI APAPA",
+      "contact": "OBASUYI MARGARETH",
+      "phone": "2348056801081",
+      "email": "sparklesupplychainltd@gmail.com"
+    },
+    {
+      "id": 139,
+      "company": "ROUND EDGE LIMITED",
+      "address": "Mobolaji Johnson Estate Lekki phase 1-Lagos",
+      "contact": "ELUEMUNOR KEVIN",
+      "phone": "2348077757557,2348099577770",
+      "email": "roundedgelimited@yahoo.com"
+    },
+    {
+      "id": 140,
+      "company": "HENDIAC NIG LTD",
+      "address": "71A MARINE RD APAPA LAGOSW",
+      "contact": "OKOGBO HENRY",
+      "phone": "2347063907461",
+      "email": "hendiacnigltd@gmail.com"
+    },
+    {
+      "id": 141,
+      "company": "VISHPRO LOGISTIC LTD",
+      "address": "302A,MURTALA MOHAMMED WAY, YABA LAGOS",
+      "contact": "HEART SUNDAY IGBEDION",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 142,
+      "company": "ANGO YAKUBU UMAR LTD",
+      "address": "N R C Q MARINE BEACH BUS STOP APAPA",
+      "contact": "ANGO YAKUBU",
+      "phone": "2348039421333",
+      "email": "angoyakubu@gmail.com"
+    },
+    {
+      "id": 143,
+      "company": "MAYSTAR MARINE SERVICES",
+      "address": "BLOCK",
+      "contact": "ADADOKUN SUNDAY OLALERE",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 144,
+      "company": "BENUELSON SERVICE LTD",
+      "address": "8 ALHAJI KADIRI STREET OFF SUNRISE BUS STOP APAPA LAGOS",
+      "contact": "OLESHE BENJAMIN",
+      "phone": "2348111103057",
+      "email": "benuelsonservice@yahoo.com"
+    },
+    {
+      "id": 145,
+      "company": "ROHWA MARINE LTD",
+      "address": "1 COMMECIAL ROAD APAPA",
+      "contact": "ONOMEREGWAE DEGAULLE JOHNSON",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 146,
+      "company": "WESTERN CHANDLERS LTD",
+      "address": "103,TAFAWA BALEWA CR, OFF ADENIRAN OGUNSANYA SURULERE",
+      "contact": "AKINDEJOYE GBEMISOLA DAMILOLA",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 147,
+      "company": "MODOIL AND GAS LTD",
+      "address": "10 AFOLABI AWOSANYA STREET IKEJA",
+      "contact": "OMODELE ADEBOLA OYEBANJI",
+      "phone": "2347032824993,2349095415474",
+      "email": "omodeleadebola@hotmail.com"
+    },
+    {
+      "id": 148,
+      "company": "NOBLE KINGS GLOBAL OCEAN LTD",
+      "address": "7/8 HAEEB BUILDING OSHODI EXPRESS WAY COCONUT",
+      "contact": "EGEJURU CHIAGOROM NOBLE",
+      "phone": "2348136597780,2347065967632",
+      "email": "noblekingsglobaloceanltd@gmaiil.com"
+    },
+    {
+      "id": 149,
+      "company": "RITZY MARINE SERVICES NIG LTD",
+      "address": "7 LADIPO STREET OLODI APAPA LAGOS",
+      "contact": "RICHARD EKWERE",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "id": 150,
+      "company": "FACMARIN GLOBAL SERVICES LTD",
+      "address": "31 APAPA OSHODI EXPRESS WAY BY COMFORT HOTEL LAGS",
+      "contact": "ACHILIKE FRANCIS CHIBUIKE",
+      "phone": "2347062031531",
+      "email": "facmarin.op@gmail.com"
+    },
+    {
+      "id": 151,
+      "company": "TDE GLOBAL SERVICES LTTD",
+      "address": "N0 30 PLOT 35, COMMERCIAL ROAD,RAIKWAY LINE,APAPA",
+      "contact": "OYEKU BABATUNDE MURITALA",
+      "phone": "234703332001",
+      "email": "tdemarineservices@gmail.com"
+    },
+    {
+      "id": 152,
+      "company": "BALLOCOAST VENTURE LIMITED",
+      "address": "42 RANDLE ROAD APAPA",
+      "contact": "SHERIFF BALOGUN",
+      "phone": "2348034176928",
+      "email": "supply.ballocoast@gmail.com"
+    },
+    {
+      "id": 153,
+      "company": "PROACTIVE SHPPING LTD",
+      "address": "8B BADAGRY ROAD GRA APAPA",
+      "contact": "AGHA IKENNA COLLINS",
+      "phone": "2349060007626",
+      "email": "info@proactive-shipping.com"
+    },
+    {
+      "id": 154,
+      "company": "GLOBAL AQUATIC CONCEPT LIMITED",
+      "address": "24/25 CREEK ROAD APAPA",
+      "contact": "AVIME OHN RENE",
+      "phone": "2348100811955,2348021426077",
+      "email": "info@globalaquaticlimited.com"
+    },
+    {
+      "id": 155,
+      "company": "BROOK OFFSHORE LIMITED",
+      "address": "1 OCEANS DRIVE OBIRI IKWERE JUNCTION NTA RD OZUOBA PORT HARCOURT",
+      "contact": "ONYEMA ABIODUN VICTORIA",
+      "phone": "2348180471414",
+      "email": "brookoffshorelimited@yahoo.com"
+    },
+    {
+      "id": 156,
+      "company": "ADE&ADE SUPPLY SERVICE",
+      "address": "9 RANDLE ROAD APAPA LAGOS STATE",
+      "contact": "OPEYEMI ADESUGBA",
+      "phone": "2349155236944",
+      "email": "adesupply680@gmail.com"
+    },
+    {
+      "id": 157,
+      "company": "FAVIGRA LOGISTICS SERVICES ENT.LTD",
+      "address": "BLOCK 3 FLAT 5, MILLENNIUM EST,VICTOR ODUGUWA STREET AMUWO ODOFIN LAGOS",
+      "contact": "WILCOX ANDREW DIEPIRINYE",
+      "phone": "2347086869798",
+      "email": "favigralogistics@gmail.com"
+    },
+    {
+      "id": 158,
+      "company": "ALPHA - GREEN LOGISTIC CO,INT;L LTD",
+      "address": "35 GRAFEM AVENUE RUMUKRUSHI PORTHARCOURT",
+      "contact": "JULUIS UMUKORO",
+      "phone": "2347038590956",
+      "email": "j.umukoro2019@gmail.com"
+    },
+    {
+      "id": 159,
+      "company": "KELCYN TRADING COMPANY LTD",
+      "address": "5 ALEX ROAD APAPA LAGOS",
+      "contact": "UDEMMADU KELECHI CYNTHIA",
+      "phone": "2349035361273",
+      "email": "info@kelcyntradingcompany.com"
+    },
+    {
+      "id": 160,
+      "company": "DON CLETUS INTERGRATED SERVICES LTD",
+      "address": "SIKIRU NOLLA ST,OPP CARE LAND SCHOOL REMLEK AJAH LAGOS",
+      "contact": "EHIANU CLETUS",
+      "phone": "2348062722818,2348077415210",
+      "email": "doncletusintservices@gmail.com"
+    },
+    {
+      "id": 161,
+      "company": "LEBRADAN NIGERIA LIMITED",
+      "address": "1A/1B CROWTHER CRESCENT GRA APAPA",
+      "contact": "DANJUMA NASIRU IBRAHIM",
+      "phone": "2347032038233,2348097531003",
+      "email": "ibrodinho2007@gmail.com"
+    },
+    {
+      "id": 162,
+      "company": "HENRIETTA MARITIME NIG LTD",
+      "address": "23 ADELE ROAD APAPA",
+      "contact": "FIDELIS OSEGHALE EBOSELE",
+      "phone": "2348057529322",
+      "email": "henriettamaritime@yahoo.com"
+    },
+    {
+      "id": 163,
+      "company": "MFN PORT SERVICES LTD",
+      "address": "2A AZARE CRESCENT OFF LIVERPOOL ROAD APAPA",
+      "contact": "ANDY CHUKWUELOZONAM ISICHEI",
+      "phone": "2348037193288",
+      "email": "andy.isichei@mfnportervices.com.ng, operational@mfnportservices.com.ng"
+    },
+    {
+      "id": 164,
+      "company": "JOHNSONTIME INTEGRATED SERVICES LTD",
+      "address": "7 WARE HOUSE ROAD,APAPA LAGOS",
+      "contact": "DAYO JOHNSON",
+      "phone": "2348080406999",
+      "email": "johnsontime80@gmail.com"
+    },
+    {
+      "id": 165,
+      "company": "REINA CHAW INDUSTRIAL AND LOGISTIC SERVICES NIG LT",
+      "address": "33 CREEK ROAD IBRU GLASS HOUSE APAPA",
+      "contact": "EWARAMI JOY ANWULI",
+      "phone": "2348038028454",
+      "email": "info@reinachawils.com"
+    },
+    {
+      "id": 166,
+      "company": "BLESSEDSEAROCK INTERNATION LTD",
+      "address": "BLOCK 4E COCONUT MARKET PLACE APAPA",
+      "contact": "UGOCHUKWU,CHRISTIAN RAPHAEL",
+      "phone": "2348068856290,2347081214686",
+      "email": "blessedsearockchristian@gmail.com"
+    },
+    {
+      "id": 167,
+      "company": "VIC-DON INTERNATIONALCOMPANY Limited",
+      "address": "4/5 TINCAN ISLAND EXPRESS WAY BY COCONUT BUS STOP APAPA LAGOS NIGERIA",
+      "contact": "OKEY VICTOR RAPHAEL",
+      "phone": "2348061174942,2347089451526",
+      "email": "okeyvictor@gmail.com"
+    }
+  ]
+}

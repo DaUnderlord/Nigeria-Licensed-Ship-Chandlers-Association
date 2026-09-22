@@ -1,0 +1,15 @@
+config.php
+node_modules/
+.DS_Store
+*.log
+uploads/applications/
+uploads/*
+!uploads/.gitkeep
+!uploads/.htaccess
+
+# Source photo dumps (cleaned copies live in /images)
+/assets/*.png
+/assets/*.jpg
+/assets/*.jpeg
+/assets/*.webp
+!/assets/build/

@@ -1,0 +1,115 @@
+{
+  "meta_description": "Nigeria Licensed Ship Chandlers Association (NILSCA) — the official body of licensed ship chandlers serving Nigerian ports.",
+  "caution": {
+    "title": "CAUTION",
+    "lead": "It is criminal to use illegal or unlicensed ship chandlers for your supplies or operations. You will be prosecuted if you do.",
+    "audience": "All ship captains, owners, representatives, superintendents and shipping companies",
+    "body": "In view of present port reforms, ISPS and IMO regulations, you are advised to utilise services of members of the Nigerian Licensed Ship Chandlers Association for all your supplies and services onboard your vessel. All licensed ship chandlers must follow legal procedures in Nigeria and uphold the quality and standards of NILSCA. Report any form of illegality."
+  },
+  "hero": {
+    "headline": "Licensed ship chandlers\nfor Nigerian waters",
+    "subhead": "Verify authorised members. Protect your vessel. Trade with integrity.",
+    "cta_label": "Check members list",
+    "cta_href": "/membership.php",
+    "image": "/images/hero-port-dawn.png",
+    "image_alt": "Cargo vessels at a commercial port at dawn"
+  },
+  "images": {
+    "chandlery": "/images/section-chandlery-dock.png",
+    "horizon": "/images/section-horizon.png",
+    "about_heritage": "/images/about-heritage.png",
+    "about_port": "/images/about-port.png"
+  },
+  "president": {
+    "name": "Chief (Dr) Martin C. Enebeli",
+    "credentials": "PhD, FCILT London, FCISM Ghana, FNIS",
+    "title": "President",
+    "photo": "/images/exec-president.jpg",
+    "greeting": "Dear Members & Friends of NILSCA,",
+    "body": [
+      "On behalf of the EXCO, Governing Council and Members, I thank all members for your continuous and steadfast loyalty to our great association.",
+      "Despite the ups and downs associated with our trade — accessibility to ports, finance, quality and standards, piracy, security and more — we have shown huge advancement across these areas of endeavour.",
+      "We the leadership implore all ship chandlers operating within this association to carry on their ship chandling business in line with operational licences and related laws of Nigeria, and with international best practices and standards.",
+      "And last but not least, I request that you continue with the passion and dedication you applied in the past to enable us achieve greater heights."
+    ],
+    "signoff": "Thanks,\nBest regards,"
+  },
+  "event": {
+    "label": "Upcoming Event",
+    "date": "10th JAN 2018",
+    "title": "NILSCA Executive Meeting",
+    "location": "Apapa Ship Chandlers Secretariat",
+    "href": "/about.php"
+  },
+  "news": {
+    "label": "Latest News / Newsletter",
+    "title": "NILSCA Meeting with Customs, Nigeria Navy and NDLEA",
+    "href": "/about.php"
+  },
+  "new_members": {
+    "label": "New Members",
+    "title": "Warm welcome to our new members!",
+    "href": "/membership.php"
+  },
+  "about": {
+    "history": [
+      "Ship chandling activities date back to the second millennium before Christ. Giancarlo Ligabue, a ship chandler and archaeologist, described in his book how fish was caught, prepared and supplied to a ship for consumption by sailors.",
+      "From the inception of hollow boats that needed to sail, someone had to supply them. As soon as a traveller embarked on a sea journey — even of a few hours — they needed sustenance packaged to withstand the rigours of voyage.",
+      "When men began to circumnavigate the globe in the Middle Ages, storing and supplying ships had become highly technical. Materials had to be of special type and quality, and the people who supplied them needed special skills and knowledge.",
+      "As far back as 1877, there existed companies acting as ship chandlers and wine merchants. As ships became larger and requirements more technical, most vessels preferred to take about 90% of requirements through one ship chandler in a particular port because of logistics — invoicing, multiplication of suppliers, and related issues."
+    ],
+    "nigeria_history": [
+      "The profession of ship chandling in Nigeria dates back to pre–Second World War when Nigeria was using Hackney permits, but it was not until 1958 that the law establishing the profession came into force by Act of Parliament.",
+      "In 1958, the Customs and Excise Management Act (C.E.M.A.) Cap 84 Laws of the Federation was enacted to regulate and promote the ship chandling profession. Under section 74 of the Act, the Minister — or in his absence a delegate of the Board of Nigeria Customs — may make regulations for the licensing and practice of the profession. The law also recognised ship chandling as an international business; both individuals and corporate organisations should be licensed to carry it out.",
+      "Ship chandling is a business of retailers who specialise in supplies of equipment and goods for ships — ship's stores. Traditional sailing-ship chandleries might include rosin, turpentine, tar, pitch, linseed oil, whale oil, tallow, lard, varnish, twine, rope and cordage, vegetables, oakum, tools, galley supplies, leather goods and paper. Modern chandlers supply provisions, victuals, engine oil, water, engine spare parts, materials and whatever other supplies the captain may require.",
+      "From the early 1970s to early 1980s, the profession witnessed a boom — an armada period — with high traffic of vessels discharging cargo in Nigeria due to the oil boom. Individuals and corporate organisations identified with the business as opportunities from the boom and congestion policy grew."
+    ],
+    "registration": "Nigeria Ship Chandlers Association was registered in 1986 (RC No: 3279) with the Ministry of Internal Affairs, now the Corporate Affairs Commission (CAC). The Association itself has been established since 1958 and has helped hundreds of chandlers succeed with their chandling projects.",
+    "professionalism": "Our two greatest assets are our members and our integrity. All our members are experienced and qualified professionals. Our competitive advantage stems from the atmosphere of mutual trust and respect that permeates the Association. The care and concern we have for our licensed chandlers greatly enhances our ability to deliver quality goods and services on time and within budget. At all times we are dedicated to our customers and their requirements.",
+    "legislation": "The law that established ship chandling was passed by an Act of Parliament of 1958 during the colonial era before Nigeria's Independence in 1960, and reviewed in 1990 (Customs and Excise Management Act — C.E.M.A.).",
+    "why_register": "NILSCA only licences competent chandlers to assure quality and best output for each project. Our team of chandlers work hard together to provide trusted partners and clients the best output."
+  },
+  "benefits": [
+    {
+      "title": "Access industry & trade information",
+      "items": [
+        "Share with and learn from fellow industry players about business opportunities, industry trends, and ways to manage key issues.",
+        "Have a platform where your opinions and views of the industry are represented.",
+        "Receive the most recent updates and circulars via email.",
+        "Participate in forums, feedback and dialogue sessions with agencies."
+      ]
+    },
+    {
+      "title": "Industry networking activities",
+      "items": [
+        "Participate in our regular members' gatherings and networking sessions."
+      ]
+    },
+    {
+      "title": "Increase your business opportunities",
+      "items": [
+        "Participate in exclusive networking sessions and business missions.",
+        "Complimentary listing in the Annual Report and other NILSCA publications.",
+        "Complimentary listing in the Membership Directory on the NILSCA website."
+      ]
+    },
+    {
+      "title": "Create your identity",
+      "items": [
+        "Receive a NILSCA Membership Certificate.",
+        "Display the NILSCA logo on your fleet and collaterals.",
+        "Exclusive opportunity to take up advertisement banners on the NILSCA website."
+      ]
+    }
+  ],
+  "contact": {
+    "headline": "We are ready to help you 24/7",
+    "subhead": "The Nigerian Licensed Ship Chandlers Association.",
+    "hours": "Mon–Friday 8am – 5pm",
+    "address": "38 Bombay Crescent, Apapa, Lagos, Nigeria",
+    "email": "shipchandlersassos@gmail.com",
+    "phone": "+234 814 667 9532",
+    "fax": "",
+    "map_embed": ""
+  }
+}
