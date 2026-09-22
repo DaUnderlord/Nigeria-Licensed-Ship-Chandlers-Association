@@ -15,24 +15,26 @@ export default async function MembershipPage() {
       <ClientEffects />
       <SiteHeader />
       <main className="pt-24">
-        <section className="relative overflow-hidden px-4 py-20 text-ink md:px-6 md:py-24">
+        <section className="relative overflow-hidden px-4 py-28 text-ink md:px-6 md:py-32">
           <div className="page-hero-media" aria-hidden>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={banner} alt="" width={1600} height={900} fetchPriority="high" />
           </div>
-          <div className="relative z-[1] mx-auto max-w-7xl">
-            <p className="text-xs font-semibold tracking-[0.2em] text-sky uppercase">Home / Membership / List</p>
-            <h1 className="mt-3 font-display text-4xl font-bold md:text-5xl">List of Our Members</h1>
-            <p className="mt-4 max-w-2xl text-ink/85">NILSCA comprehensive members list — verify licensed ship chandlers before you engage.</p>
+          <div className="relative z-[1] mx-auto max-w-7xl" data-reveal>
+            <p className="eyebrow">Home / Membership / List</p>
+            <h1 className="display-xl mt-6 max-w-[12ch]">List of Our Members</h1>
+            <p className="measure mt-6 text-base leading-relaxed text-ink/80 md:text-lg">
+              NILSCA comprehensive members list — verify licensed ship chandlers before you engage.
+            </p>
           </div>
         </section>
 
-        <section className="px-4 py-12 md:px-6 md:py-16">
+        <section className="section-pad !pt-12 md:!pt-16">
           <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="font-display text-sm font-semibold tracking-[0.15em] text-sky uppercase">Directory</p>
-                <p className="mt-1 text-sm text-navy/60">
+                <p className="eyebrow">Directory</p>
+                <p className="mt-2 text-sm text-navy/55">
                   <span data-member-count>{members.length}</span> of {members.length} members shown
                 </p>
               </div>
@@ -42,41 +44,41 @@ export default async function MembershipPage() {
                   type="search"
                   data-member-search
                   placeholder="Search company, contact, phone, email…"
-                  className="w-full border border-navy/15 bg-white px-4 py-3 text-sm text-navy outline-none ring-sky focus:ring-2"
+                  className="form-field"
                   autoComplete="off"
                 />
               </label>
             </div>
 
-            <div className="members-table-wrap mt-8 border border-navy/10 bg-white">
+            <div className="members-table-wrap mt-10 bg-white">
               <table className="members-table min-w-full text-left text-sm">
-                <thead className="bg-navy text-ink">
+                <thead>
                   <tr>
-                    <th className="px-3 py-3 font-semibold tracking-wide">No.</th>
-                    <th className="px-3 py-3 font-semibold tracking-wide">Name of Companies</th>
-                    <th className="px-3 py-3 font-semibold tracking-wide">Companies Address</th>
-                    <th className="px-3 py-3 font-semibold tracking-wide">Personal Contact</th>
-                    <th className="px-3 py-3 font-semibold tracking-wide">Telephone</th>
-                    <th className="px-3 py-3 font-semibold tracking-wide">Email Address</th>
+                    <th>No.</th>
+                    <th>Name of Companies</th>
+                    <th>Companies Address</th>
+                    <th>Personal Contact</th>
+                    <th>Telephone</th>
+                    <th>Email Address</th>
                   </tr>
                 </thead>
                 <tbody>
                   {members.map((m, i) => {
                     const search = [m.company, m.address, m.contact, m.phone, m.email].join(" ").toLowerCase();
                     return (
-                      <tr key={m.id} className="odd:bg-ink/40 border-t border-navy/10" data-member-row data-search={search}>
-                        <td className="px-3 py-3 text-navy/50" data-label="No.">{i + 1}</td>
-                        <td className="px-3 py-3 font-medium text-navy" data-label="Company">{m.company}</td>
-                        <td className="px-3 py-3 text-navy/70" data-label="Address">{m.address}</td>
-                        <td className="px-3 py-3 text-navy/70" data-label="Contact">{m.contact}</td>
-                        <td className="px-3 py-3 whitespace-nowrap text-navy/70" data-label="Telephone">{m.phone}</td>
-                        <td className="px-3 py-3 text-navy/70" data-label="Email">{m.email}</td>
+                      <tr key={m.id} data-member-row data-search={search}>
+                        <td className="text-navy/40" data-label="No.">{i + 1}</td>
+                        <td className="font-medium text-navy" data-label="Company">{m.company}</td>
+                        <td className="text-navy/65" data-label="Address">{m.address}</td>
+                        <td className="text-navy/65" data-label="Contact">{m.contact}</td>
+                        <td className="whitespace-nowrap text-navy/65" data-label="Telephone">{m.phone}</td>
+                        <td className="text-navy/65" data-label="Email">{m.email}</td>
                       </tr>
                     );
                   })}
                 </tbody>
               </table>
-              <p className="hidden px-4 py-8 text-center text-sm text-navy/50" data-member-empty>
+              <p className="hidden px-4 py-10 text-center text-sm text-navy/45" data-member-empty>
                 No members match your search.
               </p>
             </div>

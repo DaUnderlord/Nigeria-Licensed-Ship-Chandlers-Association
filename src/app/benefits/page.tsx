@@ -16,37 +16,43 @@ export default async function BenefitsPage() {
       <ClientEffects />
       <SiteHeader />
       <main className="pt-24">
-        <section className="relative overflow-hidden px-4 py-24 text-ink md:px-6 md:py-28">
+        <section className="relative overflow-hidden px-4 py-28 text-ink md:px-6 md:py-36">
           <div className="page-hero-media" aria-hidden>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={banner} alt="" width={1600} height={900} fetchPriority="high" />
           </div>
           <div className="relative z-[1] mx-auto max-w-7xl" data-reveal>
-            <p className="text-xs font-semibold tracking-[0.2em] text-sky uppercase">Home / Member&apos;s Benefits</p>
-            <h1 className="mt-4 max-w-2xl font-display text-4xl font-bold leading-tight md:text-5xl">
-              Value that comes with a licensed membership
+            <p className="eyebrow">Home / Member&apos;s Benefits</p>
+            <h1 className="display-xl mt-6 max-w-[12ch]">
+              Value of licensed membership
             </h1>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-ink/85 md:text-lg">
+            <p className="measure mt-6 text-base leading-relaxed text-ink/80 md:text-lg">
               Practical advantages of belonging to Nigeria&apos;s licensed ship chandlers association — information, networks, opportunity, and identity.
             </p>
           </div>
         </section>
 
-        <section className="px-4 py-16 md:px-6 md:py-24">
-          <div className="mx-auto max-w-7xl space-y-6">
+        <section className="section-pad">
+          <div className="mx-auto max-w-7xl">
             {benefits.map((benefit: { title?: string; items?: string[] }, i: number) => (
-              <article key={benefit.title} className="grid gap-6 border border-navy/10 bg-white p-6 md:grid-cols-[7rem_minmax(0,16rem)_1fr] md:gap-10 md:p-10" data-reveal>
-                <div className="font-display text-5xl font-bold leading-none text-navy/15 md:text-6xl" aria-hidden>
+              <article
+                key={benefit.title}
+                className="grid gap-8 border-t border-navy/10 py-14 md:grid-cols-[6rem_minmax(0,18rem)_1fr] md:gap-12 md:py-16"
+                data-reveal
+              >
+                <div className="font-display text-5xl font-semibold leading-none text-navy/12 md:text-6xl" aria-hidden>
                   {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
-                  <p className="text-xs font-semibold tracking-[0.16em] text-sky uppercase">Benefit {String(i + 1).padStart(2, "0")}</p>
-                  <h2 className="mt-2 font-display text-2xl font-bold leading-snug text-navy md:text-[1.65rem]">{benefit.title}</h2>
+                  <p className="eyebrow">Benefit {String(i + 1).padStart(2, "0")}</p>
+                  <h2 className="mt-3 font-display text-2xl font-semibold leading-snug text-navy md:text-[1.75rem]">
+                    {benefit.title}
+                  </h2>
                 </div>
-                <ul className="space-y-3 self-center text-base leading-relaxed text-navy/75">
+                <ul className="space-y-4 self-center text-base leading-relaxed text-navy/70">
                   {(benefit.items ?? []).map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sky" aria-hidden />
+                    <li key={item} className="flex gap-4">
+                      <span className="mt-2.5 h-px w-4 shrink-0 bg-sky" aria-hidden />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -54,12 +60,15 @@ export default async function BenefitsPage() {
               </article>
             ))}
           </div>
-          <div className="mx-auto mt-14 max-w-7xl border border-navy/10 bg-navy px-6 py-10 text-ink md:flex md:items-center md:justify-between md:px-10" data-reveal>
+
+          <div className="mx-auto mt-8 max-w-7xl bg-navy px-6 py-14 text-ink md:flex md:items-center md:justify-between md:px-12 md:py-16" data-reveal>
             <div className="max-w-xl">
-              <h2 className="font-display text-2xl font-bold md:text-3xl">Ready to join NILSCA?</h2>
-              <p className="mt-3 text-sm leading-relaxed text-ink/70 md:text-base">Apply for membership and gain listing, recognition, and access to association networks.</p>
+              <h2 className="font-display text-2xl font-semibold md:text-3xl">Ready to join NILSCA?</h2>
+              <p className="mt-4 text-sm leading-relaxed text-ink/60 md:text-base">
+                Apply for membership and gain listing, recognition, and access to association networks.
+              </p>
             </div>
-            <Link href="/apply" className="btn-primary mt-6 inline-flex bg-sky px-6 py-3.5 text-sm font-semibold tracking-wide text-navy md:mt-0">
+            <Link href="/apply" className="btn-primary mt-8 inline-flex bg-sky px-7 py-3.5 text-sm font-semibold text-navy md:mt-0">
               Apply for membership
             </Link>
           </div>

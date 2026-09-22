@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const SPLASH_KEY = "nilsca_splash_seen";
-const SPLASH_MS = 3200;
+const SPLASH_MS = 3600;
 
 export function ClientEffects({ splash = false }: { splash?: boolean }) {
   useEffect(() => {
@@ -114,7 +114,7 @@ function initSplashHero() {
     setTimeout(() => {
       splash.classList.add("is-done");
       splash.setAttribute("aria-hidden", "true");
-    }, 850);
+    }, 900);
   };
 
   if (!splash || reduce || seen) {
@@ -144,7 +144,7 @@ function initMotion() {
             }
           });
         },
-        { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+        { rootMargin: "0px 0px -4% 0px", threshold: 0.05 }
       );
       nodes.forEach((el) => io.observe(el));
     }
@@ -162,7 +162,8 @@ function initMotion() {
     ticking = false;
     const rect = hero.getBoundingClientRect();
     const view = Math.min(Math.max(-rect.top / Math.max(rect.height, 1), 0), 1);
-    layer.style.transform = `translate3d(${mx * 10}px, ${view * 36 + my * 8}px, 0) scale(1.06)`;
+    // Keep parallax subtle so the CSS reveal scale remains the hero’s signature motion.
+    layer.style.transform = `translate3d(${mx * 6}px, ${view * 28 + my * 5}px, 0) scale(1.02)`;
   };
   const onScroll = () => {
     if (!ticking) {
