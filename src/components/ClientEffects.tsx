@@ -10,6 +10,7 @@ export function ClientEffects({ splash = false }: { splash?: boolean }) {
     initNav();
     initMembersFilter();
     initMotion();
+    initHeroSlider();
     if (splash) initSplashHero();
   }, [splash]);
 
@@ -90,6 +91,7 @@ function initMembersFilter() {
     if (countEl) countEl.textContent = String(visible);
   };
   input.addEventListener("input", apply);
+  if (input.value.trim()) apply();
 }
 
 function initSplashHero() {
@@ -128,6 +130,52 @@ function initSplashHero() {
   setTimeout(finish, SPLASH_MS);
 }
 
+function initHeroSlider() {
+  const slides = [...document.querySelectorAll("[data-hero-slide]")];
+  const dots = [...document.querySelectorAll("[data-hero-dot]")];
+  if (slides.length < 2) return;
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const holdMs = 7200;
+  let index = 0;
+  let timer = 0;
+
+  const show = (next: number) => {
+    index = (next + slides.length) % slides.length;
+    slides.forEach((el, i) => el.classList.toggle("is-active", i === index));
+    dots.forEach((el, i) => {
+      const on = i === index;
+      el.classList.toggle("is-active", on);
+      if (on) el.setAttribute("aria-current", "true");
+      else el.removeAttribute("aria-current");
+    });
+  };
+
+  const stop = () => window.clearInterval(timer);
+  const start = () => {
+    stop();
+    if (reduce) return;
+    timer = window.setInterval(() => show(index + 1), holdMs);
+  };
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      show(i);
+      start();
+    });
+  });
+
+  const dotsWrap = document.querySelector("[data-hero-dots]");
+  dotsWrap?.addEventListener("pointerenter", stop);
+  dotsWrap?.addEventListener("pointerleave", start);
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stop();
+    else start();
+  });
+
+  start();
+}
+
 function initMotion() {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const nodes = document.querySelectorAll("[data-reveal]");
@@ -149,50 +197,4 @@ function initMotion() {
       nodes.forEach((el) => io.observe(el));
     }
   }
-
-  if (reduce) return;
-  const hero = document.querySelector("[data-parallax-hero]");
-  const layer = document.querySelector("[data-parallax-layer]") as HTMLElement | null;
-  if (!hero || !layer) return;
-
-  let ticking = false;
-  let mx = 0;
-  let my = 0;
-  const apply = () => {
-    ticking = false;
-    const rect = hero.getBoundingClientRect();
-    const view = Math.min(Math.max(-rect.top / Math.max(rect.height, 1), 0), 1);
-    // Keep parallax subtle so the CSS reveal scale remains the hero’s signature motion.
-    layer.style.transform = `translate3d(${mx * 6}px, ${view * 28 + my * 5}px, 0) scale(1.02)`;
-  };
-  const onScroll = () => {
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(apply);
-    }
-  };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  if (window.matchMedia("(pointer: fine)").matches) {
-    hero.addEventListener(
-      "pointermove",
-      (e) => {
-        const r = hero.getBoundingClientRect();
-        const pe = e as PointerEvent;
-        mx = (pe.clientX - r.left) / r.width - 0.5;
-        my = (pe.clientY - r.top) / r.height - 0.5;
-        onScroll();
-      },
-      { passive: true }
-    );
-    hero.addEventListener(
-      "pointerleave",
-      () => {
-        mx = 0;
-        my = 0;
-        onScroll();
-      },
-      { passive: true }
-    );
-  }
-  apply();
 }

@@ -50,6 +50,7 @@ export async function saveMemberAction(formData: FormData) {
     contact: String(formData.get("contact") ?? "").trim(),
     phone: String(formData.get("phone") ?? "").trim(),
     email: String(formData.get("email") ?? "").trim(),
+    certified: formData.get("certified") === "on",
   };
   if (!entry.company) redirect("/admin/members?error=company");
   const idx = members.findIndex((m) => m.id === entry.id);
@@ -57,6 +58,17 @@ export async function saveMemberAction(formData: FormData) {
   else members.push(entry);
   await saveMembers(members);
   redirect("/admin/members?saved=1");
+}
+
+export async function toggleMemberCertifiedAction(formData: FormData) {
+  await requireAdmin();
+  const id = Number(formData.get("id"));
+  const members = await getMembers();
+  const member = members.find((m) => m.id === id);
+  if (member) member.certified = !member.certified;
+  await saveMembers(members);
+  const back = member && String(formData.get("editing") ?? "") === String(id) ? `?edit=${id}` : "";
+  redirect(`/admin/members${back}`);
 }
 
 export async function deleteMemberAction(formData: FormData) {

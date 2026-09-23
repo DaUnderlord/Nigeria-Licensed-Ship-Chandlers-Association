@@ -26,6 +26,7 @@ export type Member = {
   contact: string;
   phone: string;
   email: string;
+  certified?: boolean;
 };
 
 export type Executive = {

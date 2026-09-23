@@ -1,4 +1,4 @@
-import { deleteMemberAction, saveMemberAction } from "@/app/actions";
+import { deleteMemberAction, saveMemberAction, toggleMemberCertifiedAction } from "@/app/actions";
 import { AdminShell } from "@/components/AdminShell";
 import { getMembers } from "@/lib/data";
 
@@ -24,6 +24,10 @@ export default async function AdminMembersPage({
         <label className="block text-xs font-semibold tracking-wide text-navy/60 uppercase md:col-span-2">Address<input name="address" defaultValue={editing?.address ?? ""} className="mt-1 w-full border border-navy/15 px-3 py-2 text-sm" /></label>
         <label className="block text-xs font-semibold tracking-wide text-navy/60 uppercase">Phone<input name="phone" defaultValue={editing?.phone ?? ""} className="mt-1 w-full border border-navy/15 px-3 py-2 text-sm" /></label>
         <label className="block text-xs font-semibold tracking-wide text-navy/60 uppercase">Email<input name="email" defaultValue={editing?.email ?? ""} className="mt-1 w-full border border-navy/15 px-3 py-2 text-sm" /></label>
+        <label className="flex items-center gap-2 text-sm font-medium text-navy md:col-span-2">
+          <input type="checkbox" name="certified" defaultChecked={Boolean(editing?.certified)} className="h-4 w-4" />
+          Certified member
+        </label>
         <div className="flex gap-2 md:col-span-2">
           <button className="bg-navy px-4 py-2 text-sm font-semibold text-ink">{editing ? "Save changes" : "Add member"}</button>
           {editing ? <a href="/admin/members" className="border border-navy/20 px-4 py-2 text-sm">Cancel</a> : null}
@@ -38,6 +42,7 @@ export default async function AdminMembersPage({
               <th className="px-3 py-2">Company</th>
               <th className="px-3 py-2">Contact</th>
               <th className="px-3 py-2">Phone</th>
+              <th className="px-3 py-2">Certified</th>
               <th className="px-3 py-2" />
             </tr>
           </thead>
@@ -48,6 +53,18 @@ export default async function AdminMembersPage({
                 <td className="px-3 py-2 font-medium">{m.company}</td>
                 <td className="px-3 py-2">{m.contact}</td>
                 <td className="px-3 py-2">{m.phone}</td>
+                <td className="px-3 py-2">
+                  <form action={toggleMemberCertifiedAction}>
+                    <input type="hidden" name="id" value={m.id} />
+                    {editing?.id === m.id ? <input type="hidden" name="editing" value={m.id} /> : null}
+                    <button
+                      className={m.certified ? "text-sm font-semibold text-sky" : "text-sm text-navy/45"}
+                      aria-pressed={m.certified ? "true" : "false"}
+                    >
+                      {m.certified ? "On" : "Off"}
+                    </button>
+                  </form>
+                </td>
                 <td className="px-3 py-2 whitespace-nowrap text-right">
                   <a className="text-sky hover:underline" href={`/admin/members?edit=${m.id}`}>Edit</a>
                   <form action={deleteMemberAction} className="ml-2 inline">

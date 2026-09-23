@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { ClientEffects } from "@/components/ClientEffects";
+import { MemberLookup } from "@/components/MemberLookup";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
-import { getContent } from "@/lib/data";
+import { getContent, getMembers } from "@/lib/data";
 
 export default async function HomePage() {
   const content = await getContent();
+  const members = await getMembers();
   const hero = content.hero ?? {};
   const caution = content.caution ?? {};
   const president = content.president ?? {};
@@ -12,7 +14,10 @@ export default async function HomePage() {
   const news = content.news ?? {};
   const newMembers = content.new_members ?? {};
   const siteImages = content.images ?? {};
-  const heroImage = hero.image ?? "/images/hero-port-dawn.png";
+  const heroSlides: { src: string; position?: string }[] =
+    Array.isArray(hero.slides) && hero.slides.length
+      ? hero.slides
+      : [{ src: hero.image ?? "/images/hero-port-dawn.png", position: "62% 42%" }];
   const headline = String(hero.headline ?? "Licensed ship chandlers for Nigerian waters");
   const pullQuote =
     (president.body?.[0] as string | undefined)?.slice(0, 140) ??
@@ -41,10 +46,22 @@ export default async function HomePage() {
 
       <SiteHeader isHome />
       <main>
-        <section className="hero-shell" data-hero data-parallax-hero>
-          <div className="hero-media" aria-hidden>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="hero-media-img" data-parallax-layer src={heroImage} alt="" width={1920} height={1080} fetchPriority="high" />
+        <section className="hero-shell" data-hero>
+          <div className="hero-media" data-hero-slider aria-hidden>
+            {heroSlides.map((slide, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={slide.src}
+                className={`hero-slide${i === 0 ? " is-active" : ""}`}
+                data-hero-slide
+                src={slide.src}
+                alt=""
+                width={1920}
+                height={1080}
+                style={{ objectPosition: slide.position ?? "center 42%" }}
+                fetchPriority={i === 0 ? "high" : "low"}
+              />
+            ))}
           </div>
           <div className="hero-horizon-line" aria-hidden />
           <div className="hero-content mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-4 pt-28 pb-16 md:px-6 md:pb-20">
@@ -57,7 +74,18 @@ export default async function HomePage() {
             <p className="hero-sub measure mt-4 text-base leading-relaxed md:text-lg" data-hero-rise style={{ ["--rise-delay" as string]: "320ms" }}>
               {hero.subhead}
             </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center" data-hero-rise style={{ ["--rise-delay" as string]: "480ms" }}>
+            <MemberLookup
+              members={members.map((member) => ({
+                id: member.id,
+                company: member.company,
+                address: member.address,
+                contact: member.contact,
+                phone: member.phone,
+                email: member.email,
+                certified: Boolean(member.certified),
+              }))}
+            />
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center" data-hero-rise style={{ ["--rise-delay" as string]: "520ms" }}>
               <Link href={hero.cta_href ?? "/membership"} className="btn-primary inline-flex items-center justify-center bg-sky px-7 py-3.5 text-sm font-semibold text-navy">
                 {hero.cta_label ?? "Check members list"}
               </Link>
@@ -66,6 +94,20 @@ export default async function HomePage() {
               </Link>
             </div>
           </div>
+          {heroSlides.length > 1 ? (
+            <div className="hero-dots" data-hero-dots role="group" aria-label="Hero photographs">
+              {heroSlides.map((slide, i) => (
+                <button
+                  key={slide.src}
+                  type="button"
+                  className={i === 0 ? "is-active" : undefined}
+                  data-hero-dot
+                  aria-label={`Show photograph ${i + 1} of ${heroSlides.length}`}
+                  aria-current={i === 0 ? "true" : undefined}
+                />
+              ))}
+            </div>
+          ) : null}
           <div className="hero-scroll-cue" aria-hidden data-hero-rise style={{ ["--rise-delay" as string]: "700ms" }} />
         </section>
 

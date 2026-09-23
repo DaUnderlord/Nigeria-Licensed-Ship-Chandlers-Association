@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
+import { CertifiedMark } from "@/components/CertifiedMark";
 import { ClientEffects } from "@/components/ClientEffects";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { getContent, getMembers } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Member's List" };
 
-export default async function MembershipPage() {
+export default async function MembershipPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
+  const sp = await searchParams;
+  const query = sp.q ?? "";
   const content = await getContent();
   const members = await getMembers();
   const banner = content.hero?.image ?? "/images/hero-port-dawn.png";
@@ -43,6 +50,7 @@ export default async function MembershipPage() {
                 <input
                   type="search"
                   data-member-search
+                  defaultValue={query}
                   placeholder="Search company, contact, phone, email…"
                   className="form-field"
                   autoComplete="off"
@@ -68,7 +76,12 @@ export default async function MembershipPage() {
                     return (
                       <tr key={m.id} data-member-row data-search={search}>
                         <td className="text-navy/40" data-label="No.">{i + 1}</td>
-                        <td className="font-medium text-navy" data-label="Company">{m.company}</td>
+                        <td className="font-medium text-navy" data-label="Company">
+                          <span className="inline-flex items-center gap-2">
+                            {m.company}
+                            {m.certified ? <CertifiedMark /> : null}
+                          </span>
+                        </td>
                         <td className="text-navy/65" data-label="Address">{m.address}</td>
                         <td className="text-navy/65" data-label="Contact">{m.contact}</td>
                         <td className="whitespace-nowrap text-navy/65" data-label="Telephone">{m.phone}</td>

@@ -142,6 +142,23 @@
     border-color: rgba(59, 167, 224, 0.65);
     box-shadow: 0 0 0 3px rgba(59, 167, 224, 0.15);
   }
+
+  .certified-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.05rem;
+    height: 1.05rem;
+    flex-shrink: 0;
+    border-radius: 999px;
+    background: var(--color-sky);
+    color: var(--color-navy);
+  }
+
+  .certified-mark.is-light {
+    background: #fff;
+    color: var(--color-navy);
+  }
 }
 
 /* Splash → Hero continuum */
@@ -351,20 +368,23 @@
   overflow: hidden;
 }
 
-.hero-media-img {
+.hero-slide {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 62% 40%;
-  will-change: transform;
+  will-change: transform, opacity;
   transform: scale(1.1);
-  opacity: 0.4;
-  transition: opacity 1.6s ease, transform 6s cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 0;
+  transition:
+    opacity 1.8s ease,
+    transform 8.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.hero-shell.is-revealed .hero-media-img {
+.hero-shell.is-revealed .hero-slide.is-active {
   opacity: 1;
-  transform: scale(1.02);
+  transform: scale(1);
 }
 
 .hero-shell::before {
@@ -443,6 +463,109 @@
 
 .hero-shell.is-revealed .hero-horizon-line {
   opacity: 1;
+}
+
+.hero-dots {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.75rem;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.hero-dots button {
+  position: relative;
+  width: 1.75rem;
+  height: 2px;
+  padding: 0;
+  border: 0;
+  background: rgba(242, 247, 251, 0.32);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hero-dots button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #7bc8ed;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.hero-dots button.is-active {
+  width: 2.75rem;
+  background: rgba(242, 247, 251, 0.22);
+}
+
+.hero-dots button.is-active::after {
+  animation: hero-dot-fill 7.2s linear forwards;
+}
+
+@keyframes hero-dot-fill {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.member-lookup {
+  position: relative;
+  z-index: 4;
+}
+
+.member-lookup-input {
+  width: 100%;
+  border: 1px solid rgba(242, 247, 251, 0.28);
+  background: rgba(3, 13, 24, 0.45);
+  color: #f2f7fb;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  outline: none;
+  backdrop-filter: blur(8px);
+}
+
+.member-lookup-input::placeholder {
+  color: rgba(242, 247, 251, 0.5);
+}
+
+.member-lookup-input:focus {
+  border-color: rgba(59, 167, 224, 0.75);
+  box-shadow: 0 0 0 3px rgba(59, 167, 224, 0.18);
+}
+
+.member-lookup-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 0.4rem);
+  z-index: 5;
+  background: #f2f7fb;
+  color: #061628;
+  box-shadow: 0 18px 40px rgba(3, 13, 24, 0.35);
+}
+
+.member-lookup-panel a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(6, 22, 40, 0.06);
+}
+
+.member-lookup-panel li:first-child a {
+  border-top: 0;
+}
+
+.member-lookup-panel a:hover {
+  background: rgba(59, 167, 224, 0.1);
+}
+
+.member-lookup-all {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0b2a4a !important;
 }
 
 .hero-scroll-cue {
@@ -706,9 +829,17 @@ body.nav-open .site-header {
     transform: none !important;
   }
 
-  .hero-media-img {
+  .hero-slide {
     transform: none !important;
-    opacity: 1 !important;
     transition: none !important;
+  }
+
+  .hero-slide.is-active {
+    opacity: 1 !important;
+  }
+
+  .hero-dots button.is-active::after {
+    animation: none !important;
+    transform: scaleX(1) !important;
   }
 }
