@@ -14,10 +14,10 @@ export default async function HomePage() {
   const news = content.news ?? {};
   const newMembers = content.new_members ?? {};
   const siteImages = content.images ?? {};
-  const heroSlides: { src: string; position?: string }[] =
-    Array.isArray(hero.slides) && hero.slides.length
-      ? hero.slides
-      : [{ src: hero.image ?? "/images/hero-port-dawn.png", position: "62% 42%" }];
+  const heroVideos: string[] =
+    Array.isArray(hero.videos) && hero.videos.length
+      ? hero.videos
+      : ["/images/hero-first.mp4", "/images/hero-second.mp4"];
   const headline = String(hero.headline ?? "Licensed ship chandlers for Nigerian waters");
   const pullQuote =
     (president.body?.[0] as string | undefined)?.slice(0, 140) ??
@@ -48,18 +48,15 @@ export default async function HomePage() {
       <main>
         <section className="hero-shell" data-hero>
           <div className="hero-media" data-hero-slider aria-hidden>
-            {heroSlides.map((slide, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={slide.src}
+            {heroVideos.map((src, i) => (
+              <video
+                key={src}
                 className={`hero-slide${i === 0 ? " is-active" : ""}`}
                 data-hero-slide
-                src={slide.src}
-                alt=""
-                width={1920}
-                height={1080}
-                style={{ objectPosition: slide.position ?? "center 42%" }}
-                fetchPriority={i === 0 ? "high" : "low"}
+                src={src}
+                muted
+                playsInline
+                preload={i === 0 ? "auto" : "metadata"}
               />
             ))}
           </div>
@@ -94,15 +91,15 @@ export default async function HomePage() {
               </Link>
             </div>
           </div>
-          {heroSlides.length > 1 ? (
-            <div className="hero-dots" data-hero-dots role="group" aria-label="Hero photographs">
-              {heroSlides.map((slide, i) => (
+          {heroVideos.length > 1 ? (
+            <div className="hero-dots" data-hero-dots role="group" aria-label="Hero videos">
+              {heroVideos.map((src, i) => (
                 <button
-                  key={slide.src}
+                  key={src}
                   type="button"
                   className={i === 0 ? "is-active" : undefined}
                   data-hero-dot
-                  aria-label={`Show photograph ${i + 1} of ${heroSlides.length}`}
+                  aria-label={`Show video ${i + 1} of ${heroVideos.length}`}
                   aria-current={i === 0 ? "true" : undefined}
                 />
               ))}

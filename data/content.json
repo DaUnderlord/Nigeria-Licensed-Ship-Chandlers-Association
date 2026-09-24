@@ -13,27 +13,9 @@
                  "cta_href":  "/membership",
                  "image":  "/images/hero-port-dawn.png",
                  "image_alt":  "Cargo vessels at a commercial port at dawn",
-                 "slides":  [
-                                {
-                                    "src":  "/images/hero-port-dawn.png",
-                                    "position":  "62% 42%"
-                                },
-                                {
-                                    "src":  "/images/about-port.png",
-                                    "position":  "70% 48%"
-                                },
-                                {
-                                    "src":  "/images/section-horizon.png",
-                                    "position":  "center 40%"
-                                },
-                                {
-                                    "src":  "/images/section-chandlery-dock.png",
-                                    "position":  "32% 55%"
-                                },
-                                {
-                                    "src":  "/images/about-heritage.png",
-                                    "position":  "center 42%"
-                                }
+                 "videos":  [
+                                "/images/hero-first.mp4",
+                                "/images/hero-second.mp4"
                             ]
              },
     "images":  {

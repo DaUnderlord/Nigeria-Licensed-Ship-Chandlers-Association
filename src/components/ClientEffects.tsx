@@ -131,49 +131,139 @@ function initSplashHero() {
 }
 
 function initHeroSlider() {
-  const slides = [...document.querySelectorAll("[data-hero-slide]")];
+  const slides = [...document.querySelectorAll("[data-hero-slide]")] as HTMLVideoElement[];
   const dots = [...document.querySelectorAll("[data-hero-dot]")];
-  if (slides.length < 2) return;
+  if (!slides.length) return;
 
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const holdMs = 7200;
+  const hero = document.querySelector("[data-hero]");
+  const fadeMs = 1100;
   let index = 0;
-  let timer = 0;
+  let started = false;
+  const resetTimers = new Map<HTMLVideoElement, number>();
 
-  const show = (next: number) => {
-    index = (next + slides.length) % slides.length;
-    slides.forEach((el, i) => el.classList.toggle("is-active", i === index));
+  const syncDots = () => {
     dots.forEach((el, i) => {
       const on = i === index;
       el.classList.toggle("is-active", on);
+      (el as HTMLElement).style.setProperty("--progress", "0");
       if (on) el.setAttribute("aria-current", "true");
       else el.removeAttribute("aria-current");
     });
   };
 
-  const stop = () => window.clearInterval(timer);
-  const start = () => {
-    stop();
-    if (reduce) return;
-    timer = window.setInterval(() => show(index + 1), holdMs);
+  const updateProgress = () => {
+    const active = slides[index];
+    const activeDot = dots[index] as HTMLElement | undefined;
+    if (!active || !activeDot || !active.duration || !Number.isFinite(active.duration)) return;
+    const progress = Math.min(Math.max(active.currentTime / active.duration, 0), 1);
+    activeDot.style.setProperty("--progress", String(progress));
   };
 
-  dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-      show(i);
-      start();
+  let raf = 0;
+  const tick = () => {
+    updateProgress();
+    raf = window.requestAnimationFrame(tick);
+  };
+
+  const clearReset = (video: HTMLVideoElement) => {
+    const timer = resetTimers.get(video);
+    if (timer) window.clearTimeout(timer);
+    resetTimers.delete(video);
+  };
+
+  const queueReset = (video: HTMLVideoElement) => {
+    clearReset(video);
+    const timer = window.setTimeout(() => {
+      if (video.classList.contains("is-active")) return;
+      try {
+        video.currentTime = 0;
+      } catch {
+        /* ignore seek before metadata */
+      }
+      resetTimers.delete(video);
+    }, fadeMs + 50);
+    resetTimers.set(video, timer);
+  };
+
+  const playActive = () => {
+    slides.forEach((video, i) => {
+      const on = i === index;
+      video.classList.toggle("is-active", on);
+      if (on) {
+        clearReset(video);
+        if (!reduce) {
+          const playPromise = video.play();
+          if (playPromise && typeof playPromise.catch === "function") {
+            playPromise.catch(() => undefined);
+          }
+        } else {
+          video.pause();
+        }
+      } else {
+        video.pause();
+        queueReset(video);
+      }
+    });
+    syncDots();
+  };
+
+  const show = (next: number) => {
+    index = (next + slides.length) % slides.length;
+    playActive();
+  };
+
+  slides.forEach((video, i) => {
+    video.muted = true;
+    video.playsInline = true;
+    video.loop = slides.length === 1;
+    video.addEventListener("ended", () => {
+      if (i !== index) return;
+      if (slides.length < 2) {
+        try {
+          video.currentTime = 0;
+        } catch {
+          /* ignore */
+        }
+        video.play().catch(() => undefined);
+        return;
+      }
+      show(index + 1);
     });
   });
 
-  const dotsWrap = document.querySelector("[data-hero-dots]");
-  dotsWrap?.addEventListener("pointerenter", stop);
-  dotsWrap?.addEventListener("pointerleave", start);
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) stop();
-    else start();
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => show(i));
   });
 
-  start();
+  document.addEventListener("visibilitychange", () => {
+    const active = slides[index];
+    if (!active) return;
+    if (document.hidden) active.pause();
+    else if (started && !reduce) active.play().catch(() => undefined);
+  });
+
+  const begin = () => {
+    if (started) return;
+    started = true;
+    playActive();
+    window.cancelAnimationFrame(raf);
+    raf = window.requestAnimationFrame(tick);
+  };
+
+  if (hero?.classList.contains("is-revealed")) {
+    begin();
+  } else if (hero) {
+    const mo = new MutationObserver(() => {
+      if (hero.classList.contains("is-revealed")) {
+        mo.disconnect();
+        begin();
+      }
+    });
+    mo.observe(hero, { attributes: true, attributeFilter: ["class"] });
+  } else {
+    begin();
+  }
 }
 
 function initMotion() {
