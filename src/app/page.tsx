@@ -105,6 +105,14 @@ export default async function HomePage() {
               ))}
             </div>
           ) : null}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="hero-warning-sign"
+            src="/images/no-unauthorized-ship-chandlers.png"
+            alt="Warning: no unauthorized ship chandlers. Licensed suppliers only. ID required."
+            width={320}
+            height={320}
+          />
           <div className="hero-scroll-cue" aria-hidden data-hero-rise style={{ ["--rise-delay" as string]: "700ms" }} />
         </section>
 
